@@ -1,0 +1,300 @@
+$date
+	Wed Nov 20 17:22:01 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 4 ! s [3:0] $end
+$var wire 1 " cout $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % cin $end
+$var reg 1 & clk $end
+$scope module uut $end
+$var wire 4 ' a [3:0] $end
+$var wire 4 ( b [3:0] $end
+$var wire 1 % cin $end
+$var wire 1 & clk $end
+$var wire 4 ) s_ff [3:0] $end
+$var wire 4 * s [3:0] $end
+$var wire 1 " cout $end
+$var wire 1 + c_ff $end
+$var wire 4 , b_ff [3:0] $end
+$var wire 4 - a_ff [3:0] $end
+$scope module cla $end
+$var wire 4 . a [3:0] $end
+$var wire 4 / b [3:0] $end
+$var wire 1 0 c1 $end
+$var wire 1 1 c2 $end
+$var wire 1 2 c3 $end
+$var wire 1 % cin $end
+$var wire 1 + cout $end
+$var wire 1 3 w1 $end
+$var wire 1 4 w21 $end
+$var wire 1 5 w22 $end
+$var wire 1 6 w31 $end
+$var wire 1 7 w32 $end
+$var wire 1 8 w33 $end
+$var wire 1 9 w41 $end
+$var wire 1 : w42 $end
+$var wire 1 ; w43 $end
+$var wire 1 < w44 $end
+$var wire 4 = s [3:0] $end
+$var wire 4 > p [3:0] $end
+$var wire 4 ? g [3:0] $end
+$upscope $end
+$scope module d_flipflop1 $end
+$var wire 1 & clk $end
+$var wire 1 @ d $end
+$var reg 1 A q $end
+$upscope $end
+$scope module d_flipflop10 $end
+$var wire 1 & clk $end
+$var wire 1 B d $end
+$var reg 1 C q $end
+$upscope $end
+$scope module d_flipflop11 $end
+$var wire 1 & clk $end
+$var wire 1 D d $end
+$var reg 1 E q $end
+$upscope $end
+$scope module d_flipflop12 $end
+$var wire 1 & clk $end
+$var wire 1 F d $end
+$var reg 1 G q $end
+$upscope $end
+$scope module d_flipflop13 $end
+$var wire 1 & clk $end
+$var wire 1 H d $end
+$var reg 1 I q $end
+$upscope $end
+$scope module d_flipflop2 $end
+$var wire 1 & clk $end
+$var wire 1 J d $end
+$var reg 1 K q $end
+$upscope $end
+$scope module d_flipflop3 $end
+$var wire 1 & clk $end
+$var wire 1 L d $end
+$var reg 1 M q $end
+$upscope $end
+$scope module d_flipflop4 $end
+$var wire 1 & clk $end
+$var wire 1 N d $end
+$var reg 1 O q $end
+$upscope $end
+$scope module d_flipflop5 $end
+$var wire 1 & clk $end
+$var wire 1 P d $end
+$var reg 1 Q q $end
+$upscope $end
+$scope module d_flipflop6 $end
+$var wire 1 & clk $end
+$var wire 1 R d $end
+$var reg 1 S q $end
+$upscope $end
+$scope module d_flipflop7 $end
+$var wire 1 & clk $end
+$var wire 1 T d $end
+$var reg 1 U q $end
+$upscope $end
+$scope module d_flipflop8 $end
+$var wire 1 & clk $end
+$var wire 1 V d $end
+$var reg 1 W q $end
+$upscope $end
+$scope module d_flipflop9 $end
+$var wire 1 & clk $end
+$var wire 1 + d $end
+$var reg 1 " q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+xW
+0V
+xU
+0T
+xS
+0R
+xQ
+0P
+xO
+0N
+xM
+0L
+xK
+0J
+xI
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+0@
+bx ?
+bx >
+bx =
+0<
+x;
+x:
+x9
+08
+x7
+x6
+05
+x4
+03
+x2
+x1
+x0
+bx /
+bx .
+bx -
+bx ,
+x+
+bx *
+bx )
+b0 (
+b0 '
+0&
+0%
+b0 $
+b0 #
+x"
+bx !
+$end
+#3
+1P
+1V
+1@
+1N
+b1001 $
+b1001 (
+b1001 #
+b1001 '
+#5
+1D
+0F
+0H
+0B
+1+
+10
+b10 )
+b10 =
+01
+04
+02
+06
+07
+09
+0:
+0;
+b1001 ?
+b0 >
+1A
+0K
+0M
+b1001 -
+b1001 .
+1O
+1Q
+0S
+0U
+b1001 ,
+b1001 /
+1W
+1&
+#10
+0&
+#13
+1R
+0V
+0@
+1L
+b11 $
+b11 (
+b1100 #
+b1100 '
+#15
+0+
+1H
+1F
+1B
+00
+b1111 )
+b1111 =
+b0 ?
+b1111 >
+1"
+0I
+0G
+1E
+b10 !
+b10 *
+0C
+0W
+b11 ,
+b11 /
+1S
+1M
+b1100 -
+b1100 .
+0A
+1&
+#20
+0&
+#23
+0P
+0R
+0L
+0N
+b0 $
+b0 (
+b0 #
+b0 '
+#25
+0F
+0H
+0B
+0D
+b0 )
+b0 =
+b0 >
+0M
+b0 -
+b0 .
+0O
+0Q
+b0 ,
+b0 /
+0S
+1C
+1G
+b1111 !
+b1111 *
+1I
+0"
+1&
+#30
+0&
+#35
+0I
+0G
+0E
+b0 !
+b0 *
+0C
+1&

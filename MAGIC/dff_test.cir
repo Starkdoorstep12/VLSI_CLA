@@ -1,0 +1,112 @@
+CLA_Post_layout_Simulations
+.include TSMC_180nm.txt
+
+.param SUPPLY=1.8
+.global vdd gnd
+VDD vdd gnd 'SUPPLY'
+Vclk clk gnd pulse(1.8 0 0 0 0 5n 10n)
+Vd d gnd pulse(0 1.8 3n 0 0 10n 20n)
+
+* SPICE3 file created from dff.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 b clk d3 Gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=200 ps=100
+M1001 b q1 vdd vdd CMOSP w=40 l=2
++  ad=200 pd=90 as=1200 ps=540
+M1002 d1 d vdd vdd CMOSP w=40 l=2
++  ad=400 pd=180 as=0 ps=0
+M1003 q1 a gnd Gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=600 ps=300
+M1004 d4 b gnd Gnd CMOSN w=20 l=2
++  ad=200 pd=100 as=0 ps=0
+M1005 qnot qmid gnd Gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1006 q qnot vdd vdd CMOSP w=40 l=2
++  ad=200 pd=90 as=0 ps=0
+M1007 q1 clk d2 vdd CMOSP w=40 l=2
++  ad=200 pd=90 as=400 ps=180
+M1008 a d gnd Gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1009 d3 q1 gnd Gnd CMOSN w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 a clk d1 vdd CMOSP w=40 l=2
++  ad=200 pd=90 as=0 ps=0
+M1011 qnot qmid vdd vdd CMOSP w=40 l=2
++  ad=200 pd=90 as=0 ps=0
+M1012 qmid clk d4 Gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1013 q qnot gnd Gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1014 d2 a vdd vdd CMOSP w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 qmid b vdd vdd CMOSP w=40 l=2
++  ad=200 pd=90 as=0 ps=0
+C0 gnd qmid 0.05fF
+C1 a d2 0.12fF
+C2 d2 q1 0.45fF
+C3 d2 vdd 0.63fF
+C4 qmid qnot 0.07fF
+C5 vdd qnot 0.60fF
+C6 d gnd 0.05fF
+C7 b d3 0.21fF
+C8 d4 qmid 0.21fF
+C9 gnd d3 0.21fF
+C10 d1 a 0.45fF
+C11 a q1 0.07fF
+C12 a vdd 0.29fF
+C13 d1 vdd 0.63fF
+C14 vdd q1 0.26fF
+C15 vdd qmid 0.62fF
+C16 clk b 0.18fF
+C17 a d 0.07fF
+C18 d1 d 0.12fF
+C19 clk gnd 0.45fF
+C20 d vdd 0.22fF
+C21 d2 clk 0.04fF
+C22 d3 q1 0.12fF
+C23 q gnd 0.23fF
+C24 d4 clk 0.04fF
+C25 a clk 0.40fF
+C26 d1 clk 0.04fF
+C27 clk q1 0.18fF
+C28 clk qmid 0.07fF
+C29 clk vdd 0.35fF
+C30 q qnot 0.07fF
+C31 b gnd 0.05fF
+C32 q vdd 0.51fF
+C33 d clk 0.30fF
+C34 gnd qnot 0.28fF
+C35 d4 b 0.12fF
+C36 clk d3 0.04fF
+C37 b q1 0.07fF
+C38 d4 gnd 0.21fF
+C39 b qmid 0.07fF
+C40 b vdd 0.73fF
+C41 a gnd 0.26fF
+C42 gnd q1 0.26fF
+C43 gnd Gnd 0.74fF
+C44 d4 Gnd 0.15fF
+C45 d3 Gnd 0.16fF
+C46 clk Gnd 1.41fF
+C47 q Gnd 0.10fF
+C48 b Gnd 0.03fF
+C49 q1 Gnd 0.64fF
+C50 a Gnd 0.46fF
+C51 d Gnd 0.33fF
+C52 qnot Gnd 0.28fF
+C53 qmid Gnd 0.02fF
+C54 vdd Gnd 4.69fF
+
+.tran 0.01n 20n
+
+.control
+set hcopypscolor = 1 
+set color0=white 
+set color1=black 
+
+run
+set curplottitle=Vedant_Tejas-2023112018-q3-cla_adder
+plot q d+2 clk+4
+.endc
